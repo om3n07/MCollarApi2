@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MCollarApi2</name>
+    </assembly>
+    <members>
+        <member name="T:MCollarApi2.Controllers.CollarsController">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="P:MCollarApi2.Controllers.CollarsController.CollarBusinessLayer">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:MCollarApi2.Controllers.CollarsController.GetCollar(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="collarId"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MCollarApi2.Controllers.CollarsController.GetAllCollars">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MCollarApi2.Controllers.CollarsController.SaveCollar(MCollarApi2.Model.Collar)">
+            <summary>
+            
+            </summary>
+            <param name="collar"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MCollarApi2.Controllers.CollarsController.SaveLocation(MCollarApi2.Model.Location)">
+            <summary>
+            
+            </summary>
+            <param name="location"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
