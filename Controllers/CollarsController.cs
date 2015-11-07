@@ -47,6 +47,23 @@ namespace MCollarApi2.Controllers
         /// <summary>
         /// 
         /// </summary>
+        /// <param name="collarId"></param>
+        /// <returns></returns>
+        [HttpGet]
+        [Route("Collars/{deviceId}")]
+        public HttpResponseMessage GetCollar(string deviceId)
+        {
+            var collar = CollarBusinessLayer.GetCollarByDeviceId(deviceId);
+            if (collar == null)
+            {
+                return Request.CreateResponse(HttpStatusCode.NotFound);
+            }
+            return Request.CreateResponse(HttpStatusCode.OK, collar);
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
         /// <returns></returns>
         [HttpGet]
         [Route("Collars")]

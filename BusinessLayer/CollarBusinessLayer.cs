@@ -1,8 +1,6 @@
 ﻿using MCollarApi2.DataAccess;
 using MCollarApi2.Model;
-using System;
 using System.Collections.Generic;
-using System.Data.SqlClient;
 using System.Linq;
 
 namespace MCollarApi2.BusinessLayer
@@ -10,8 +8,9 @@ namespace MCollarApi2.BusinessLayer
     public interface ICollarBusinessLayer
     {
         Collar GetCollarById(int collarId);
+        Collar GetCollarByDeviceId(string deviceId);
         int SaveCollar(Collar collar);
-        List<Collar> GetAllCollars();
+        IEnumerable<Collar> GetAllCollars();
         int SaveLocation(Location location);
     }
 
@@ -28,19 +27,29 @@ namespace MCollarApi2.BusinessLayer
         {
             var savedLocation = _dbContext.Locations.Add(location);
             _dbContext.SaveChanges();
-            return savedLocation.Locationid;
+            return savedLocation.LocationId;
         }
 
-        public List<Collar> GetAllCollars()
+        public IEnumerable<Collar> GetAllCollars()
         {
-            return _dbContext.Collars.ToList();
+
+            return _dbContext.Collars;
         }
 
         public Collar GetCollarById(int collarId)
         {
             var collars = _dbContext.Collars;
             var collar = _dbContext.Collars.FirstOrDefault(c => c.CollarId == collarId);
-            collar.Locations = _dbContext.Locations.Where(l => l.CollarId == collarId).ToList();
+            //collar.Locations = _dbContext.Locations.Where(l => l.CollarId == collarId);
+
+            return collar;
+        }
+
+        public Collar GetCollarByDeviceId(string deviceId)
+        {
+            var collars = _dbContext.Collars;
+            var collar = _dbContext.Collars.FirstOrDefault(c => c.CollarDeviceId == deviceId);
+            //collar.Locations = _dbContext.Locations.Where(l => l.CollarId == collar.CollarId);
 
             return collar;
         }

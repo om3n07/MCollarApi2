@@ -8,7 +8,8 @@ namespace MCollarApi2.Model
         public int CollarId { get; set; }
         public string Name { get; set; }
         public string CollarDeviceId { get; set; }
+        //public IEnumerable<Location> Locations { get; set; }
+        //public IEnumerable<Fence> Fences { get; set; }
         public DateTime CreateDate { get; set; }
-        public List<Location> Locations { get; set; }
     }
 }
