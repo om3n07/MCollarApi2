@@ -153,10 +153,10 @@
       <DependentUpon>201510292211150_InitialCreate.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="Model\Annotations.cs" />
+    <Compile Include="ModelMetaData\Annotations.cs" />
     <Compile Include="Model\Collar.cs" />
     <Compile Include="Model\CustomFence.cs" />
-    <Compile Include="Model\Enums.cs" />
+    <Compile Include="ModelMetaData\Enums.cs" />
     <Compile Include="Model\Fence.cs" />
     <Compile Include="Model\Location.cs" />
     <Compile Include="Model\FencePost.cs" />

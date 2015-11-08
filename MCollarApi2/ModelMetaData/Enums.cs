@@ -1,4 +1,4 @@
-﻿namespace MCollarApi2.Model
+﻿namespace MCollarApi2.ModelMetaData
 {
     public enum DistanceUnitType
     {
