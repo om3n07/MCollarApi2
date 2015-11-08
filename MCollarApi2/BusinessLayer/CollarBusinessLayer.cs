@@ -5,15 +5,6 @@ using System.Linq;
 
 namespace MCollarApi2.BusinessLayer
 {
-    public interface ICollarBusinessLayer
-    {
-        Collar GetCollarById(int collarId);
-        Collar GetCollarByDeviceId(string deviceId);
-        int SaveCollar(Collar collar);
-        IEnumerable<Collar> GetAllCollars();
-        int SaveLocation(CollarLocation location);
-    }
-
     public class CollarBusinessLayer : ICollarBusinessLayer
     {
         private static MCollarDataBaseContext _dbContext;
@@ -27,7 +18,7 @@ namespace MCollarApi2.BusinessLayer
         {
             var savedLocation = _dbContext.Locations.Add(location);
             _dbContext.SaveChanges();
-            return savedLocation.LocationId;
+            return savedLocation.CollarLocationId;
         }
 
         public IEnumerable<Collar> GetAllCollars()

@@ -10,6 +10,7 @@ namespace MCollarApi2.Migrations
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
+            AutomaticMigrationDataLossAllowed = true;
             ContextKey = "MCollarApi2.DataAccess.MCollarDataBaseContext";
         }
 

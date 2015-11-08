@@ -14,6 +14,8 @@ namespace MCollarApi2.DataAccess
 
         public DbSet<Collar> Collars { get; set; }
         public DbSet<CollarLocation> Locations { get; set; }
+        public DbSet<Fence> Fences { get; set; }
+        public DbSet<FencePost> FencePosts { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {

@@ -7,7 +7,7 @@ namespace MCollarApi2.Model
     {
         public int CollarId { get; set; }
         
-        public int LocationId { get; set; }
+        public int CollarLocationId { get; set; }
         public DateTime RecordTime { get; set; }
         public double XCoord { get; set; }
         public double YCoord { get; set; }

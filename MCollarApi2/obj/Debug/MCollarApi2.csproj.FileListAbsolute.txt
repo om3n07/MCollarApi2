@@ -77,8 +77,8 @@ C:\Users\Matt\Documents\GitHub\MCollarApi2\MCollarApi2\bin\System.Net.Http.Forma
 C:\Users\Matt\Documents\GitHub\MCollarApi2\MCollarApi2\bin\System.Web.Http.xml
 C:\Users\Matt\Documents\GitHub\MCollarApi2\MCollarApi2\bin\System.Web.Http.Cors.xml
 C:\Users\Matt\Documents\GitHub\MCollarApi2\MCollarApi2\bin\System.Web.Http.WebHost.xml
-C:\Users\Matt\Documents\GitHub\MCollarApi2\MCollarApi2\obj\Debug\MCollarApi2.csprojResolveAssemblyReference.cache
 C:\Users\Matt\Documents\GitHub\MCollarApi2\MCollarApi2\obj\Debug\MCollarApi2.Migrations.InitialCreate.resources
 C:\Users\Matt\Documents\GitHub\MCollarApi2\MCollarApi2\obj\Debug\MCollarApi2.csproj.GenerateResource.Cache
 C:\Users\Matt\Documents\GitHub\MCollarApi2\MCollarApi2\obj\Debug\MCollarApi2.dll
 C:\Users\Matt\Documents\GitHub\MCollarApi2\MCollarApi2\obj\Debug\MCollarApi2.pdb
+C:\Users\Matt\Documents\GitHub\MCollarApi2\MCollarApi2\obj\Debug\MCollarApi2.csprojResolveAssemblyReference.cache

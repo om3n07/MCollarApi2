@@ -4,6 +4,24 @@
         <name>MCollarApi2</name>
     </assembly>
     <members>
+        <member name="T:MCollarApi2.BusinessLayer.FenceBusinessLayer">
+            <summary>
+            Manages fences and their respective fence posts
+            </summary>
+        </member>
+        <member name="M:MCollarApi2.BusinessLayer.FenceBusinessLayer.GetAllFencePosts">
+            <summary>
+            Gets all fence posts. Should only be used for debugging
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MCollarApi2.BusinessLayer.FenceBusinessLayer.DeleteFence(System.Int32)">
+            <summary>
+            Deletes fence and all related posts
+            </summary>
+            <param name="fenceId"></param>
+            <returns></returns>
+        </member>
         <member name="T:MCollarApi2.Controllers.CollarsController">
             <summary>
             
@@ -41,7 +59,7 @@
             <param name="collar"></param>
             <returns></returns>
         </member>
-        <member name="M:MCollarApi2.Controllers.CollarsController.SaveLocation(MCollarApi2.Model.Location)">
+        <member name="M:MCollarApi2.Controllers.CollarsController.SaveLocation(MCollarApi2.Model.CollarLocation)">
             <summary>
             
             </summary>
