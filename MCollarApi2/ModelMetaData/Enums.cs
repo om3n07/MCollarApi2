@@ -1,14 +1,4 @@
-﻿namespace MCollarApi2.ModelMetaData
+﻿namespace PowerOutageApi.ModelMetaData
 {
-    public enum DistanceUnitType
-    {
-        Feet,
-        Meters
-    }
 
-    public enum ShapeType
-    {
-        Circle,
-        Square
-    }
 }

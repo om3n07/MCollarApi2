@@ -1,20 +1,20 @@
-namespace MCollarApi2.Migrations
+namespace PowerOutageApi.Migrations
 {
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Migrations;
     using System.Linq;
 
-    internal sealed class Configuration : DbMigrationsConfiguration<MCollarApi2.DataAccess.MCollarDataBaseContext>
+    internal sealed class Configuration : DbMigrationsConfiguration<PowerOutageApi.DataAccess.PowerCheckinDB>
     {
         public Configuration()
         {
             AutomaticMigrationsEnabled = true;
             AutomaticMigrationDataLossAllowed = true;
-            ContextKey = "MCollarApi2.DataAccess.MCollarDataBaseContext";
+            ContextKey = "MCollarApi2.DataAccess.PowerCheckinDB";
         }
 
-        protected override void Seed(MCollarApi2.DataAccess.MCollarDataBaseContext context)
+        protected override void Seed(PowerOutageApi.DataAccess.PowerCheckinDB context)
         {
             //  This method will be called after migrating to the latest version.
 

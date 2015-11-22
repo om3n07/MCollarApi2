@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MCollarApi2.Properties {
+namespace PowerOutageApi.Properties {
     
     
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]

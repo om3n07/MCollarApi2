@@ -1,11 +1,11 @@
 using System.Web.Http;
 using WebActivatorEx;
-using MCollarApi2;
+using PowerOutageApi;
 using Swashbuckle.Application;
 
 [assembly: PreApplicationStartMethod(typeof(SwaggerConfig), "Register")]
 
-namespace MCollarApi2
+namespace PowerOutageApi
 {
     public class SwaggerConfig
     {

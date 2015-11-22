@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web.Http;
 
-namespace MCollarApi2
+namespace PowerOutageApi
 {
     public static class WebApiConfig
     {

@@ -5,7 +5,7 @@ using System.Web;
 using System.Web.Http;
 using System.Web.Routing;
 
-namespace MCollarApi2
+namespace PowerOutageApi
 {
     public class WebApiApplication : System.Web.HttpApplication
     {

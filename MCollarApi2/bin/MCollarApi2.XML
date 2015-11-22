@@ -4,66 +4,42 @@
         <name>MCollarApi2</name>
     </assembly>
     <members>
-        <member name="T:MCollarApi2.BusinessLayer.FenceBusinessLayer">
+        <member name="T:PowerOutageApi.Controllers.PowerCheckinDeviceController">
             <summary>
-            Manages fences and their respective fence posts
+            
             </summary>
         </member>
-        <member name="M:MCollarApi2.BusinessLayer.FenceBusinessLayer.GetAllFencePosts">
+        <member name="P:PowerOutageApi.Controllers.PowerCheckinDeviceController.PowerCheckinDeviceBusinessLayer">
             <summary>
-            Gets all fence posts. Should only be used for debugging
+            
             </summary>
+        </member>
+        <member name="M:PowerOutageApi.Controllers.PowerCheckinDeviceController.GetDevice(System.Int32)">
+            <summary>
+            
+            </summary>
+            <param name="powerCheckinDeviceId"></param>
             <returns></returns>
         </member>
-        <member name="M:MCollarApi2.BusinessLayer.FenceBusinessLayer.DeleteFence(System.Int32)">
+        <member name="M:PowerOutageApi.Controllers.PowerCheckinDeviceController.DeviceCheckin(System.Int32)">
             <summary>
-            Deletes fence and all related posts
+            
             </summary>
-            <param name="fenceId"></param>
+            <param name="powerCheckinDeviceId"></param>
             <returns></returns>
         </member>
-        <member name="T:MCollarApi2.Controllers.CollarsController">
+        <member name="M:PowerOutageApi.Controllers.PowerCheckinDeviceController.GetDevice(System.String)">
             <summary>
             
             </summary>
-        </member>
-        <member name="P:MCollarApi2.Controllers.CollarsController.CollarBusinessLayer">
-            <summary>
-            
-            </summary>
-        </member>
-        <member name="M:MCollarApi2.Controllers.CollarsController.GetCollar(System.Int32)">
-            <summary>
-            
-            </summary>
-            <param name="collarId"></param>
+            <param name="deviceName"></param>
             <returns></returns>
         </member>
-        <member name="M:MCollarApi2.Controllers.CollarsController.GetCollar(System.String)">
+        <member name="M:PowerOutageApi.Controllers.PowerCheckinDeviceController.SaveDevice(System.String)">
             <summary>
             
             </summary>
-            <param name="collarId"></param>
-            <returns></returns>
-        </member>
-        <member name="M:MCollarApi2.Controllers.CollarsController.GetAllCollars">
-            <summary>
-            
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:MCollarApi2.Controllers.CollarsController.SaveCollar(MCollarApi2.Model.Collar)">
-            <summary>
-            
-            </summary>
-            <param name="collar"></param>
-            <returns></returns>
-        </member>
-        <member name="M:MCollarApi2.Controllers.CollarsController.SaveLocation(MCollarApi2.Model.CollarLocation)">
-            <summary>
-            
-            </summary>
-            <param name="location"></param>
+            <param name="deviceName"></param>
             <returns></returns>
         </member>
     </members>

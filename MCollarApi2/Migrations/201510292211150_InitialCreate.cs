@@ -1,4 +1,4 @@
-namespace MCollarApi2.Migrations
+namespace PowerOutageApi.Migrations
 {
     using System;
     using System.Data.Entity.Migrations;

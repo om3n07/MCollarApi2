@@ -138,13 +138,10 @@
   <ItemGroup>
     <Compile Include="App_Start\SwaggerConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
-    <Compile Include="BusinessLayer\CollarBusinessLayer.cs" />
-    <Compile Include="BusinessLayer\FenceBusinessLayer.cs" />
-    <Compile Include="BusinessLayer\ICollarBusinessLayer.cs" />
-    <Compile Include="BusinessLayer\IFenceBusinessLayer.cs" />
-    <Compile Include="Controllers\CollarsController.cs" />
-    <Compile Include="Controllers\FencesController.cs" />
-    <Compile Include="DataAccess\MCollarDataBaseContext.cs" />
+    <Compile Include="BusinessLayer\PowerCheckinBusinessLayer.cs" />
+    <Compile Include="BusinessLayer\IPowerCheckinBusinessLayer.cs" />
+    <Compile Include="Controllers\PowerCheckinDeviceController.cs" />
+    <Compile Include="DataAccess\PowerCheckinDB.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -154,13 +151,8 @@
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="ModelMetaData\Annotations.cs" />
-    <Compile Include="Model\Collar.cs" />
-    <Compile Include="Model\CustomFence.cs" />
     <Compile Include="ModelMetaData\Enums.cs" />
-    <Compile Include="Model\Fence.cs" />
-    <Compile Include="Model\Location.cs" />
-    <Compile Include="Model\FencePost.cs" />
-    <Compile Include="Model\RegularFence.cs" />
+    <Compile Include="Model\PowerCheckinDevice.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
